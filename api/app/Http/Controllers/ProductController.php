@@ -15,7 +15,7 @@ class ProductController extends Controller
         return $product;
     }
 
-    public function getLogo($image){
+    public function getImage($image){
         $path = storage_path('uploads\images\\' . $image);
         if(!File::exists($path)){
             abort(404);

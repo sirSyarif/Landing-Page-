@@ -35,7 +35,7 @@ export default class Slider extends Component {
             <div className="row-fluid">
                 <div id="demo" className="carousel slide " data-ride="carousel">
 
-                <ul class="carousel-indicators">
+                <ul className="carousel-indicators">
                     <li data-target="#demo" data-slide-to="0" class="active"></li>
                     <li data-target="#demo" data-slide-to="1" class=""></li>
                     <li data-target="#demo" data-slide-to="2" class=""></li>
@@ -53,11 +53,11 @@ export default class Slider extends Component {
                     {this.state.promo.map(this.loopName)}
                     
                 </div>
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
+                <a className="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span className="carousel-control-prev-icon"></span>
                 </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
+                <a className="carousel-control-next" href="#demo" data-slide="next">
+                    <span className="carousel-control-next-icon"></span>
                 </a>
             </div>
         </div>
