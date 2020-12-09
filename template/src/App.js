@@ -22,10 +22,10 @@ class App extends Component {
         <div>
           <Nav />
           <Route exact path="/" component={Home} />
-          <Route path="/product" component={Product} />
+          <Route path="/products" component={Product} />
           <Route path="/about" component={About}/>
           <Route path="/contact" component={Contact}/>
-          <Route path="/product/:id" component={DetailProduct}/>
+          <Route exact path="/product/:id" component={DetailProduct}/>
           <Footer />
         </div>
         </ScrollToTop>

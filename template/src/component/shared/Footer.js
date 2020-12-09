@@ -17,7 +17,50 @@ export default class Footer extends Component {
     }
     render() {
         return (
-            <h1>ini footer y ajg</h1>
+            <footer className="footer">
+            <div className="footer-left col-md-4 col-sm-6">
+              <p className="about">
+                <span> About the company</span> Ut congue augue non tellus bibendum, in varius tellus condimentum. In scelerisque nibh tortor, sed rhoncus odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer tellus est, vehicula eu lectus tincidunt,
+                ultricies feugiat leo. Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis augue. Nam ut nibh mollis, tristique ante sed, viverra massa.
+              </p>
+              <div className="icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+            <div className="footer-center col-md-4 col-sm-6">
+              <div>
+                <i className="fa fa-map-marker"></i>
+                <p><span> {this.state.profile.alamat}</span>Indonsia</p>
+              </div>
+              <div>
+                <i className="fa fa-phone"></i>
+                <p> {this.state.profile.telepon}</p>
+              </div>
+              <div>
+                <i className="fa fa-envelope"></i>
+                <p><a href="#"> office@company.com</a></p>
+              </div>
+            </div>
+            <div className="footer-right col-md-4 col-sm-6">
+                <img 
+                    src="http://localhost:8000/api/profile/logo/logo.png" 
+                    alt=""
+                    width="80px"
+                    height="50px"
+                /> 
+              <p className="menu">
+                <a href="#"> Home</a> |
+                <a href="#"> About</a> |
+                <a href="#"> Product</a> |
+                <a href="#"> Contact</a> |
+              </p>
+              <p className="name"> {this.state.profile.nama} &copy; 2020</p>
+            </div>
+          </footer>
         )
     }
 }

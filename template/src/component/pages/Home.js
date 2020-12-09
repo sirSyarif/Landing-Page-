@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Banner from '../shared/Banner';
+import Blog from '../shared/Blog';
 import Brand from '../shared/Brand';
 import Service from '../shared/Service';
 import Shot from '../shared/Shot';
@@ -13,6 +15,8 @@ export default class Home extends Component {
                     <Shot /> 
                     <Brand />
                     <Service />
+                    <Banner />
+                    <Blog />
                 </div>
             </div>
         )
