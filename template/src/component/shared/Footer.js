@@ -54,9 +54,9 @@ export default class Footer extends Component {
                 /> 
               <p className="menu">
                 <a href="#"> Home</a> |
-                <a href="#"> About</a> |
-                <a href="#"> Product</a> |
-                <a href="#"> Contact</a> |
+                <a href="/about"> About</a> |
+                <a href="/products"> Product</a> |
+                <a href="/contact"> Contact</a> |
               </p>
               <p className="name"> {this.state.profile.nama} &copy; 2020</p>
             </div>
