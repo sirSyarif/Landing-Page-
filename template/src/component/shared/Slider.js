@@ -18,13 +18,12 @@ export default class Slider extends Component {
 
     loopName(item){
         return (
-            <div className="carousel-item ">
+            <div className="carousel-item " key={item.id}>
                 <img 
                     src={"http://localhost:8000/api/promo/foto/"+item.image}
                     alt=""
                     width="80px"
                     height="50px"
-                    key={item.id}
                 />          
             </div>
         )
@@ -36,9 +35,9 @@ export default class Slider extends Component {
                 <div id="demo" className="carousel slide " data-ride="carousel">
 
                 <ul className="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1" class=""></li>
-                    <li data-target="#demo" data-slide-to="2" class=""></li>
+                    <li data-target="#demo" data-slide-to="0" className="active"></li>
+                    <li data-target="#demo" data-slide-to="1" ></li>
+                    <li data-target="#demo" data-slide-to="2" ></li>
                 </ul>
 
                 <div className="carousel-inner">

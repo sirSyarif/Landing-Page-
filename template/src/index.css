@@ -243,7 +243,6 @@ transition: 0.6s;
 }
 
 #card1 {
-  width: 800px;
   padding-top: 100px;
 }
 
@@ -279,9 +278,7 @@ transition: 0.6s;
 }
 
 #card2 {
-  width: 800px;
   padding-top: 250px;
-  margin-left: 100px;
 }
 
 .footer {
@@ -292,7 +289,9 @@ transition: 0.6s;
   font-weight: bold;
   font-size: 16px;
   padding: 50px;
-  margin-top: 50px;
+  margin-top: 100px;
+  z-index: 99;
+  position: relative;
 }
 
 .footer .footer-left,
@@ -452,13 +451,49 @@ transition: 0.6s;
 }
 
 .detailed {
-  margin-left: 150px;
+  padding-left: 150px;
 }
 
 #detail-product img {
-  margin-left: 100px;
+  padding-left: 100px;
 }
 
 #detail-product h1{
   font-weight: 100 !important;
+}
+
+#about {
+  margin-top: 150px;
+  background-image: url(./images/about.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.about-head {
+  font-weight: 800;
+}
+
+#about h1:nth-child(2){
+  font-weight: 400;
+
+}
+
+.about-line{
+  width: 10%;
+  height: 1px;
+  border-bottom: 4px solid blue;
+}
+
+.about-header {
+  margin-left: 100px;
+}
+
+.image {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.gallery{
+  padding-left: 500px;
 }

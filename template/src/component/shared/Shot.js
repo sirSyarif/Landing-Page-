@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router,Route,Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 
 export default class Shot extends Component {
     state = {
@@ -19,7 +19,7 @@ export default class Shot extends Component {
 
     loopItem(item){
         return (
-            <div className="col-md-4 mt-4 shot-product" key="item.id">
+            <div className="col-md-4 mt-4 shot-product" key={item.id}>
                 <Link to={`/product/${item.id}`} className="shot-link">
                 <div className="card profile-card shot">
                     <div className="card-img-block">
@@ -32,8 +32,8 @@ export default class Shot extends Component {
                         </div>
                         <div className="card-body pt-0">
                             <h5 className="card-title">{item.nama}</h5>
-                            <p className="card-text">{item.deskripsi}</p>
-                            <p className="card-text float-right">Rp. {item.harga}</p>
+                            <p className="card-text" >{item.deskripsi}</p>
+                            <p className="card-text float-right" >Rp. {item.harga}</p>
                         </div>
                     </div>
                 </Link>
