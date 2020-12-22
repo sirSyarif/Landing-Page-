@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
+import Touch from '../shared/Touch'
 
 export default class Contact extends Component {
     render() {
         return (
-            <h2>KONTAK</h2>
+            <div>
+                <Touch />
+            </div>
         )
     }
 }

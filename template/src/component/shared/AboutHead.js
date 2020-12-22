@@ -4,7 +4,7 @@ export default class AboutHead extends Component {
     render() {
         return (
             <div className="col-sm-12" id="about">
-                <div className="col-sm-5 about-header">
+                <div className="col-sm-5 offset-sm-1 about-header">
                     <h1 className="about-head">ABOUT</h1>
                     <h1>DMS COMPANY</h1>
                     <div className="about-line"></div><br/>
@@ -13,7 +13,6 @@ export default class AboutHead extends Component {
                         <img 
                             src="https://i.ibb.co/m5Sbz0T/team.jpg" 
                             alt="team"
-
                         />
                     </center>
                 </div> 

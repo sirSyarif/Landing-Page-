@@ -19,7 +19,7 @@ export default class Product extends Component {
 
     loopItem(item){
         return (
-            <div className="col-md-4 mt-4 shot-product" key="item.id">
+            <div className="col-md-4 mt-4 shot-product" key={item.id}>
                 <Link to={`/product/${item.id}`} className="shot-link">
                 <div className="card profile-card shot">
                     <div className="card-img-block">

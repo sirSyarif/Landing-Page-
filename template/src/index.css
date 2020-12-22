@@ -485,9 +485,6 @@ transition: 0.6s;
   border-bottom: 4px solid blue;
 }
 
-.about-header {
-  margin-left: 100px;
-}
 
 .image {
   margin-right: 15px;
@@ -496,4 +493,60 @@ transition: 0.6s;
 
 .gallery{
   padding-left: 500px;
+}
+
+#galeri h1{
+  color: black;
+  font-weight: 800;
+}
+
+#galeri p{
+  color: blue;
+}
+
+#mission {
+  background-image: url(./images/about1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+#mission h1{
+  font-weight: 800;
+}
+
+#values h1 {
+  font-weight: 800;
+}
+
+#values i{
+  padding: 15px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+#contact {
+  margin-top: 150px;
+}
+
+#contact h1 {
+  font-weight: 800;
+}
+
+.kontak {
+  margin-top: 50px;
+}
+
+.kontak i{
+  padding: 20px;
+  font-size: 40px;
+}
+
+.kontak-button span:hover{
+  color: blue;
+}
+
+.map {
+  margin-top: 50px;
 }
